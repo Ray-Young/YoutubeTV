@@ -1,5 +1,5 @@
 
-### Summary
+## Summary
 This is a YoutubeTV web app, a learning project using React. I particularly practiced some React core concepts like class, state, callback, and some ES6 syntax in the project.
 
 ***As most frontend framework do, React can save you a lot of work in building a web app. This project has less than 200 lines***
@@ -7,12 +7,12 @@ This is a YoutubeTV web app, a learning project using React. I particularly prac
 ### Important
 ***Remember to add your Youtube API Key at the beginning of index.js. To get one, Search 'Get Youtube API key' in Google. It east and free to get one.***
 
-### How to run
+## How to run
 * Install dependency: npm install
 * Start server: npm start
 * Go to localhost and see: http://localhost:8080/webpack-dev-server/
 
-### What things this project can do:
+## What things this project can do:
 Instead of showing a butch of videos, this web app only shows 5 videos from the search result, it saves you from too many videos
 
 Functionality
@@ -20,18 +20,18 @@ Functionality
 * Search and watch youtube videos
 * Unbounce search feature as Google search do
 
-### What tech stack
+## Tech stack
 * React
 * JavaScript
 * CSS
 * Google API
 
-### What React concepts are learned in this project
+##React concepts in this project
 * Class component vs Functional Component
 * State
 * Call back function
 
-### Learning note
+## Learning note
 
 #### Component
 There are class component and function component in React. They are kind similar to JS functions.
