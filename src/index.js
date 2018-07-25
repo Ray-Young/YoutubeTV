@@ -30,8 +30,12 @@ class App extends Component {
             videos: [],
             selectedVideo: null
         };
+        this.videoSearch('surfboards')
+    }
 
-        YTSearch({key: API_KEY, term: 'surfboards'}, (videos) => {
+
+    videoSearch(term) {
+        YTSearch({key: API_KEY, term: term}, (videos) => {
             // When parameter equals to the input
             // We can use a simplier one
             this.setState({
@@ -42,18 +46,19 @@ class App extends Component {
             // this.setState({videos : data});
         });
     }
+
     render() {
         return (
             // Pass videos={this.state.videos} as a prop
             <div>
-                <SearchBar />
+                <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
                 <VideoDetail video={this.state.selectedVideo} />
                 <VideoList
                     onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+
                     videos={this.state.videos}/>
             </div>
         )
-
     }
 }
 

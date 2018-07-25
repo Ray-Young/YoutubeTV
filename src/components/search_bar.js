@@ -28,17 +28,18 @@ class SearchBar extends Component {
             // 1. the value was set to state at first
             // 2. User start typing something, which updates the value of the state
             // 3. Once the setState is called, the component start re-render, and it will set the value of the input
-            <div>
+            <div className="search-bar">
                 <input
                 value = {this.state.term}
-                onChange={event => this.setState({term : event.target.value})}/>
+                onChange={event => this.onInputChange(event.target.value)}/>
             </div>
             )
     }
 
     // Event Handler
-    onInputChange(event) {
-        console.log(event.target.value);
+    onInputChange(term) {
+        this.setState({term})
+        this.props.onSearchTermChange(term);
     }
 
 }
