@@ -11,7 +11,7 @@ import SearchBar from './components/search_bar'
 
 // Run in command line: npm install --save youtube-api-search
 // the save option is add this package info into package.json
-const API_KEY = 'AIzaSyAEOy0aZysSmumESCMgelVxjQ1bnPQupD8';
+const API_KEY = '';
 
 // Call back function, function(data) is invoked once the first Search function is completed.
 
